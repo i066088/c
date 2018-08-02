@@ -2,6 +2,10 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+/*
+	c varadic functions are implementation specific, and most probably macros, so they have no type safety. more info. varadic, e.g.
+	#define va_arg(list, mode) ((mode *)(list = (char *)list + sizeof(mode)))[-1]
+*/
 int print(int num_count,...)
 /*num_count contains the number of integers passed*/
 {
